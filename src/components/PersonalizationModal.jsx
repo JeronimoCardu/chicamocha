@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { extras, removableIngredients } from "../data/customization";
 import { calculateItemPrice } from "../utils/priceCalculator";
-import { useCart } from "../context/CartContext";
 
 export function PersonalizationModal({ burger, onClose, onAddToCart }) {
   const [selectedExtras, setSelectedExtras] = useState([]);
@@ -46,9 +45,14 @@ export function PersonalizationModal({ burger, onClose, onAddToCart }) {
   };
 
   return (
-    <div className={`fixed inset-0 z-40 ${burger ? "block" : "hidden"}`}>
-      <div className="absolute inset-0 bg-black/50" onClick={onClose}></div>
-      <div className="absolute bottom-0 left-0 right-0 top-0 w-full bg-[#131313] text-[#E5E2E1] overflow-y-auto border-t border-[#353534] pb-20">
+    <div
+      className={`fixed inset-0 z-40 ${burger ? "block" : "hidden"}`}
+      onClick={onClose}
+    >
+      <div
+        className="absolute bottom-0 left-0 right-0 top-0 w-full bg-[#131313] text-[#E5E2E1] overflow-y-auto border-t border-[#353534] pb-20"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="p-6 max-w-2xl mx-auto">
           <div className="flex justify-between items-center mb-4 pb-4 border-b border-[#353534]">
             <h2 className="text-xl font-bold text-[#FFB77D]">

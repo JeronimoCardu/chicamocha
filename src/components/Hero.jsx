@@ -7,7 +7,7 @@ export function Hero() {
         className="absolute inset-0 w-full h-full object-cover brightness-50"
       />
 
-      <div className="relative z-10 text-center px-6">
+      <div className="relative space-y-10 z-10 text-center px-6">
         <h2 className="text-5xl font-black uppercase text-[#FFB77D] leading-tight">
           Smash burgers hechas como deben ser.
         </h2>
@@ -16,9 +16,12 @@ export function Hero() {
           Las mejores hamburguesas de la zona
         </p>
 
-        <button className="mt-8 bg-[#FFB77D] text-black font-bold uppercase px-8 py-4 rounded-xl active:scale-95 transition">
+        <a
+          href="#menu-section"
+          className="mt-8 bg-[#FFB77D] text-black font-bold uppercase px-8 py-4 rounded-xl active:scale-95 transition"
+        >
           Pedir ahora
-        </button>
+        </a>
       </div>
     </section>
   );
