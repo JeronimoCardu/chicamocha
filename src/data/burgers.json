@@ -1,59 +1,56 @@
 [
   {
     "name": "Burga 1",
-    "price": "$12.50",
-    "desc": "Doble carne, cheddar fundido y nuestra salsa secreta ahumada.",
-    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop"
+    "price": "$12000",
+    "desc": "Doble carne, Doble cheddar, Cebolla Crispy, Bacon y nuestra salsa de la casa.",
+    "image": "./burgas/burga1.png"
   },
   {
     "name": "Burga 2",
-    "price": "$11.00",
-    "desc": "Clásica con cebolla braseada y pepinillos premium.",
-    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop"
+    "price": "$12000",
+    "desc": "Doble carne, Doble cheddar, Bacon y salsa roja.",
+    "image": "./burgas/burga2.png"
   },
   {
     "name": "Burga 3",
-    "price": "$14.90",
-    "desc": "Nuestra versión premium con aceite de trufa y champiñones.",
-    "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1200&auto=format&fit=crop",
-    "featured": true
+    "price": "$12000",
+    "desc": "Doble carne, Doble roquefort, Rucula y Cebolla Caramelizada.",
+    "image": "./burgas/burga3.png"
   },
   {
     "name": "Burga 4",
-    "price": "$13.00",
-    "desc": "Doble jalapeño y crema de habanero para los valientes.",
-    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=1200&auto=format&fit=crop"
+    "price": "$12000",
+    "desc": "Doble carne, Doble cheddar, Lechuga, Pepinillos y nuestra salsa de la casa.",
+    "image": "./burgas/burga4.png"
   },
   {
     "name": "Burga 5",
-    "price": "$15.50",
-    "desc": "Triple carne con bacon crocante ahumado.",
-    "image": "https://images.unsplash.com/photo-1603064752734-4c48eff53d05?q=80&w=1200&auto=format&fit=crop"
+    "price": "$12000",
+    "desc": "Doble carne, Doble cheddar, Doble provolone y nuestra salsa de la casa.",
+    "image": "./burgas/burga5.png"
   },
   {
     "name": "Burga 6",
-    "price": "$10.50",
-    "desc": "La favorita del purista. Mucho queso, mucha costra.",
-    "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?q=80&w=1200&auto=format&fit=crop"
+    "price": "$12000",
+    "desc": "Doble carne, Doble cheddar, Huevo, bacon y salsa roja.",
+    "image": "./burgas/burga6.png"
   },
-
   {
     "name": "Burga 7",
-    "price": "$13.50",
-    "desc": "Salsa BBQ casera y aros de cebolla extra crujientes.",
-    "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?q=80&w=1200&auto=format&fit=crop"
+    "price": "$12000",
+    "desc": "Doble carne, Doble cheddar, Lechuga, Tomate y Cebolla.",
+    "image": "./burgas/burga7.png"
   },
   {
     "name": "Burga 8",
-    "price": "$14.00",
-    "desc": "La opción veggie con patty de hongos y aguacate.",
-    "image": "https://images.unsplash.com/photo-1520072959219-c595dc870360?q=80&w=1200&auto=format&fit=crop"
+    "price": "$12000",
+    "desc": "Doble carne, Doble cheddar y salsa roja.",
+    "image": "./burgas/burga8.png"
   },
   {
     "name": "Jhon",
-    "price": "$18.00",
-    "desc": "La leyenda. 4 patties, huevo frito y cebolla caramelizada.",
-    "image": "https://images.unsplash.com/photo-1610614819513-58e34989848b?q=80&w=1200&auto=format&fit=crop",
-    "special": true
+    "price": "$12000",
+    "desc": "---",
+    "image": "./burgas/jhon.png"
   }
 ]

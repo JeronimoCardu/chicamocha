@@ -1,9 +1,11 @@
 // Función para generar mensaje de WhatsApp
+import { formatPrice } from "./priceCalculator";
+
 export function generateWhatsAppMessage(cartItems, total, customerInfo) {
-  let message = "🍔 NUEVO PEDIDO - CHICA MOCHA\n\n";
+  let message = "NUEVO PEDIDO - CHICA MOCHA\n\n";
 
   cartItems.forEach((item) => {
-    message += `• ${item.name} x${item.quantity}\n`;
+    message += `• x${item.quantity} ${item.name} \n`;
     if (item.selectedExtras.length > 0) {
       item.selectedExtras.forEach((extra) => {
         message += `  + ${extra.name}\n`;
@@ -15,18 +17,22 @@ export function generateWhatsAppMessage(cartItems, total, customerInfo) {
       });
     }
     if (item.comment) {
-      message += `  Comentario: ${item.comment}\n`;
+      message += `  \nComentario: ${item.comment}\n`;
     }
     message += "\n";
   });
 
-  message += `TOTAL: $${total.toFixed(2)}\n\n`;
+  message += `TOTAL: $${formatPrice(total)}\n\n`;
   message += "Cliente:\n";
   message += `- Apellido: ${customerInfo.apellido || ""}\n`;
   message += `- Tipo de entrega: ${customerInfo.tipoEntrega || ""}\n`;
   message += `- Dirección: ${customerInfo.direccion || ""}\n`;
   message += `- Horario: ${customerInfo.horario || ""}\n`;
   message += `- Medio de pago: ${customerInfo.medioPago || ""}\n`;
+
+  message += "\n Si abonas por tranferencia por favor enviar COMPROBANTE";
+  message += "\n alias: leosko \n";
+  message += "\n¡Gracias por tu pedido!";
 
   return message;
 }

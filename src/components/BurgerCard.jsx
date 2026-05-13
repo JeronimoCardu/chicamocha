@@ -1,4 +1,10 @@
+import { formatPrice } from "../utils/priceCalculator";
+
 export function BurgerCard({ burger, onOpenModal }) {
+  const priceNumber =
+    parseFloat(burger.price.replace("$", "").replace(".", "")) || 0;
+  const formattedPrice = `$${formatPrice(priceNumber)}`;
+
   return (
     <div
       className={`overflow-hidden rounded-3xl border transition hover:border-[#FFB77D]
@@ -14,7 +20,7 @@ export function BurgerCard({ burger, onOpenModal }) {
         <div
           className={`absolute top-3 right-3 px-3 py-1 rounded-lg font-bold ${burger.special ? "bg-black text-[#FFB77D]" : "bg-black/70 text-[#FFB77D]"}`}
         >
-          {burger.price}
+          {formattedPrice}
         </div>
 
         {burger.special && (

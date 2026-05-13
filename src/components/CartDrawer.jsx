@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useCart } from "../context/CartContext";
-import { calculateItemSubtotal } from "../utils/priceCalculator";
+import { calculateItemSubtotal, formatPrice } from "../utils/priceCalculator";
 import {
   generateWhatsAppMessage,
   generateWhatsAppLink,
@@ -71,7 +71,7 @@ export function CartDrawer({ isOpen, onClose }) {
                     <div className="flex-1">
                       <h3 className="font-bold">{item.name}</h3>
                       <p className="text-sm text-gray-400">
-                        ${(item.totalPrice || 0).toFixed(2)} c/u
+                        ${formatPrice(item.totalPrice || 0)} c/u
                       </p>
                     </div>
                     <div className="flex items-center">
@@ -112,14 +112,14 @@ export function CartDrawer({ isOpen, onClose }) {
                     </p>
                   )}
                   <p className="font-bold">
-                    Subtotal: ${(calculateItemSubtotal(item) || 0).toFixed(2)}
+                    Subtotal: ${formatPrice(calculateItemSubtotal(item) || 0)}
                   </p>
                 </div>
               ))}
 
               <div className="mt-4">
                 <h3 className="font-bold text-lg text-[#FFB77D]">
-                  Total: ${(total || 0).toFixed(2)}
+                  Total: ${formatPrice(total || 0)}
                 </h3>
               </div>
 

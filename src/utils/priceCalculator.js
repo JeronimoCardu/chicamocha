@@ -1,7 +1,12 @@
+// Función para formatear precios en pesos argentinos (agrega puntos para miles)
+export function formatPrice(price) {
+  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 // Función para calcular el precio total de un item
 export function calculateItemPrice(basePrice, selectedExtras) {
   const extrasTotal = selectedExtras.reduce(
-    (sum, extra) => sum + extra.price,
+    (sum, extra) => sum + extra.price * (extra.quantity || 1),
     0,
   );
   return basePrice + extrasTotal;

@@ -27,6 +27,9 @@ export function Footer() {
           <h6 className="uppercase font-bold text-[#FFB77D] mb-2">Instagram</h6>
           <p className="text-gray-400">@chicamochaa</p>
         </a>
+        <p className="text-gray-500 text-sm">
+          Web creada por Jeronimo Cardu
+        </p>
       </div>
     </footer>
   );
